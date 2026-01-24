@@ -7,7 +7,7 @@ body {
 }
 
 body::before {
-    background: url("img/thlistbg.webp") center center/cover no-repeat;
+    background: url("img/bg.webp") center center/cover no-repeat;
     content: "";
     height: 100%;
     width: 100%;
@@ -35,6 +35,7 @@ header {
 
 h2 {
     text-align: center;
+    font-size: 2rem;
 }
 
 .game {
@@ -42,4 +43,33 @@ h2 {
     border-radius: 10px;
     padding: 1rem;
     margin: 1.5rem 3rem;
+    text-align: center;
+}
+
+h3 {
+    font-size: 1.5rem;
+}
+
+.characters {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.character {
+    border: 2px solid black;
+    border-radius: 10px;
+    max-width: 200px;
+}
+
+.character img {
+    height: 244px;
+    width: 128px;
+}
+
+.character:hover {
+    background-color: #b8b8b8;
+    transform: translateY(-2px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
 }
