@@ -68,7 +68,7 @@ h3 {
 }
 
 .character:hover {
-    background-color: #b8b8b8;
+    background-color: #d5d5d5;
     transform: translateY(-2px);
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
     cursor: pointer;
