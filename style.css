@@ -91,7 +91,7 @@ h3 {
 .detail-card {
     background: white;
     width: 50%;
-    max-width: 500px;
+    max-width: 550px;
     aspect-ratio: 1 / 1;
     display: flex;
     gap: 1.5rem;
