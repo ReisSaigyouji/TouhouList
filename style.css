@@ -73,3 +73,40 @@ h3 {
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
     cursor: pointer;
 }
+
+.overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+
+.overlay.hidden {
+    display: none;
+}
+
+.detail-card {
+    background: white;
+    width: 50%;
+    max-width: 500px;
+    aspect-ratio: 1 / 1;
+    display: flex;
+    gap: 1.5rem;
+    padding: 1.5rem;
+    border-radius: 12px;
+}
+
+.detail-card img {
+    height: 100%;
+    max-width: 45%;
+    object-fit: contain;
+}
+
+.detail-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}

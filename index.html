@@ -18,7 +18,11 @@
         <section class="game">
             <h3>Embodiment of Scarlet Devil</h3>
             <div class="characters">
-                <div class="character">
+                <div class="character"
+                     data-name="Reimu Hakurei"
+                     data-image="img/th6/Th06Reimu2.png"
+                     data-description="The main protagonist of the Touhou Project series along with the deuteragonist, Marisa Kirisame.
+                                        As the shrine maiden of the Hakurei Shrine, she manages the Hakurei Border of Gensokyo and exterminates troublesome youkai.">
                     <img src="img/th6/Th06Reimu2.png" alt="Reimu">
                     <p>Reimu Hakurei</p>
                 </div>
@@ -148,10 +152,22 @@
         <section class="game">
 
         </section>
+
+        <div class="overlay hidden" id="overlay">
+            <div class="detail-card" id="detailCard">
+                <img id="detailImage" alt="">
+                <div class="detail-info">
+                    <h2 id="detailName"></h2>
+                    <p id="detailDescription"></p>
+                </div>
+            </div>
+        </div>
+
     </main>
 
     <footer>
         <!--here will be back to the top button-->
     </footer>
+    <script src="index.js"></script>
 </body>
 </html>
