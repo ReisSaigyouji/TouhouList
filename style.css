@@ -110,3 +110,16 @@ h3 {
     flex-direction: column;
     justify-content: center;
 }
+
+footer {
+    text-align: center;
+    align-items: center;
+    font-size: 2rem;
+}
+
+footer a {
+    color: black;
+}
+footer a:hover {
+    color: #707070;
+}
