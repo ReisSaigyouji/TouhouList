@@ -59,12 +59,15 @@ h3 {
 .character {
     border: 2px solid black;
     border-radius: 10px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
     max-width: 200px;
 }
 
 .character img {
-    height: 244px;
-    width: 128px;
+    width: 80%;
+    height: auto;
+    aspect-ratio: 1 / 2;
+    object-fit: cover;
 }
 
 .character:hover {
@@ -126,4 +129,36 @@ footer a {
 }
 footer a:hover {
     color: #707070;
+}
+
+@media (max-width: 768px) {
+
+    .game {
+        margin: 1rem;
+    }
+
+    .characters {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .detail-card {
+        flex-direction: column;
+        width: 90%;
+        aspect-ratio: auto;
+        max-height: 90vh;
+        overflow-y: auto;
+    }
+
+    .detail-card img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    header {
+        font-size: 1.5rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
 }
