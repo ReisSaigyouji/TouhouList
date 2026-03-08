@@ -85,6 +85,7 @@ h3 {
     align-items: center;
     justify-content: center;
     z-index: 1000;
+    padding: 1rem;
 }
 
 .overlay.hidden {
@@ -142,16 +143,30 @@ footer a:hover {
     }
 
     .detail-card {
-        flex-direction: column;
-        width: 90%;
-        aspect-ratio: auto;
-        max-height: 90vh;
+        width: min(92vw, 420px);
+        max-height: 85vh;
+        display: grid;
+        grid-template-columns: 120px 1fr;
+        gap: 1rem;
+        padding: 1rem;
         overflow-y: auto;
+        align-items: start;
     }
 
     .detail-card img {
-        max-width: 100%;
+        width: 100%;
         height: auto;
+        object-fit: contain;
+    }
+
+    .detail-info {
+        font-size: 0.95rem;
+        line-height: 1.4;
+    }
+
+    .detail-info h3 {
+        font-size: 1.2rem;
+        margin-top: 0;
     }
 
     header {
