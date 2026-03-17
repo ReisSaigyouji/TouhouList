@@ -132,6 +132,83 @@ footer a:hover {
     color: #707070;
 }
 
+#menu-toggle {
+    display: none;
+}
+
+.menu-button {
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+    width: 3rem;
+    height: 3rem;
+    background: #e6e6e6;
+    border: 2px solid black;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.35rem;
+    cursor: pointer;
+    z-index: 2000;
+}
+
+.menu-button span {
+    width: 1.4rem;
+    height: 2px;
+    background: black;
+    transition: 0.3s;
+    transform-origin: center;
+}
+
+.side-menu {
+    position: fixed;
+    top: 4rem;
+    right: 1rem;
+    background: #ececec;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+
+    opacity: 0;
+    transform: translateY(-10px);
+    pointer-events: none;
+    transition: 0.25s ease;
+}
+
+.side-menu a {
+    text-decoration: none;
+    color: black;
+    padding: 0.4rem 0.6rem;
+    border-radius: 6px;
+}
+
+.side-menu a:hover {
+    background: #cdcdcd;
+}
+
+#menu-toggle:checked ~ .side-menu {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+}
+
+#menu-toggle:checked + .menu-button span:nth-child(1) {
+    transform: translateY(0.45rem) rotate(45deg);
+}
+
+#menu-toggle:checked + .menu-button span:nth-child(2) {
+    opacity: 0;
+}
+
+#menu-toggle:checked + .menu-button span:nth-child(3) {
+    transform: translateY(-0.45rem) rotate(-45deg);
+}
+
 @media (max-width: 768px) {
 
     .game {
